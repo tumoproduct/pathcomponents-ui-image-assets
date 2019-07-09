@@ -2,7 +2,7 @@
   "name": "ui-image-assets",
   "version": "5.1.0",
   "main": "main.css",
-  "repository": "http://git.tumo.lab/pathcomponents/ui-image-assets.git",
+  "repository": "https://github.com/tumoproduct/pathcomponents-ui-image-assets.git",
   "author": "Hayk Galstyan <hayk.galstyan@tumo.org>",
   "license": "MIT",
   "files": [
@@ -11,6 +11,5 @@
   ],
   "dependencies": {
     "@polymer/font-roboto": "^0.0.3",
-    "skills": "http://git.tumo.lab/pathcomponents/skills.git#3.0.0"
   }
 }
