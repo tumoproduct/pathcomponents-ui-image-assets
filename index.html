@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+  <head>
+    <title>UI Image Assets</title>
+    <link rel="import" href="node_modules/@polymer/font-roboto/roboto.html"/>
+    <link rel="stylesheet" href="main.css">
+    <style>
+      html,body
+      {
+        background-color: #000;
+        margin: 0px;
+        padding: 0px;
+        font-family: Roboto;
+        color: #fff;
+      }
+
+      #container
+      {
+        margin: auto;
+        width: 900px;
+      }
+
+      h2
+      {
+        margin-top: 20px;
+        clear: both;
+      }
+
+      .row
+      {
+        clear: both;
+      }
+
+      .wrapper
+      {
+        width: 130px;
+        height: 150px;
+        float: left;
+        margin-left: 10px;
+      }
+
+      .wrapper:first-child
+      {
+        margin-left: 0px;
+      }
+
+      .wrapper .label
+      {
+        margin-top: 5px;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .icon, .ui
+      {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+      }
+
+      .row.skills .wrapper
+      {
+        width: 210px;
+        position: relative;
+        padding-top: 100px;
+        box-sizing: border-box;
+      }
+
+      .row.skills .wrapper .icon
+      {
+        transform: scale(0.5);
+        transform-origin: top center;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+    </div>
+    <script src="node_modules/skills/skills.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded",function()
+    {
+      var container = document.querySelector("#container");
+
+      var h2;
+      var row;
+
+      var classes =
+      [
+        [""],
+        ["border"],
+        ["color"],
+        ["color", "border"],
+        {
+          _class:[""],
+          attribute:"disabled"
+        },
+        {
+          _class:["border"],
+          attribute:"disabled"
+        }
+      ];
+
+      var order = ["photography","robotics","web-development","graphic-design","programming","game-development","3d-modeling","music","filmmaking","writing","drawing","animation","new-media","motion-graphics","learning-lab"];
+
+      for(var i = 0; i < order.length; ++i)
+      {
+        if(order[i] != "learning-lab")
+        {
+          var skill = shavigh.skills[order[i]];
+        }
+        else
+        {
+          var skill =
+          {
+            "tag" : "learning-lab",
+            "csstag"    : "learning-lab",
+            "name" :
+            {
+              "en" : "Learning Lab"
+            }
+          };
+        }
+
+        h2 = document.createElement("h2");
+        h2.innerText = skill.name.en;
+        container.appendChild(h2);
+
+        row = document.createElement("div");
+        row.classList.add("row");
+        row.classList.add("skills");
+        container.appendChild(row);
+
+        for(var j = 0; j < classes.length; ++j)
+        {
+          if(j < 4)
+          {
+            var class_ =
+            {
+              _class: [].concat([skill.tag], classes[j]),
+            };
+          }
+          else
+          {
+            var class_ =
+            {
+              _class: [].concat([skill.tag], classes[j]._class),
+              attribute: classes[j].attribute
+            }
+          }
+
+          row.appendChild(createElement("icon", class_));
+        }
+      }
+
+      var icons =
+      [
+          "award"
+        , "lock"
+        , "unlock"
+        , "path"
+        ,{
+          _class: "path",
+          attribute:"disabled"
+        }
+        , "wof"
+        ,{
+          _class: "wof",
+          attribute:"disabled"
+        }
+        , "activities"
+        ,{
+          _class: "activities",
+          attribute:"disabled"
+        }
+        , "announcements"
+        ,{
+          _class: "announcements",
+          attribute:"disabled"
+        }
+        , "logout"
+        , "portfolio"
+        ,{
+          _class: ["messenger", "female"]
+        }
+        ,{
+          _class: ["messenger", "male"]
+        }
+        , "calendar"
+      ];
+
+      h2 = document.createElement("h2");
+      h2.innerText = "Icons";
+      container.appendChild(h2);
+
+      for(var i = 0; i < icons.length; ++i)
+      {
+        if(i % 6 == 0)
+        {
+          row = document.createElement("div");
+          row.classList.add("row");
+          container.appendChild(row);
+        }
+
+        row.appendChild(createElement("icon", icons[i]));
+      }
+
+      var uis =
+      [
+        "radial-inner-shadow"
+      ];
+
+      icon = null;
+      row = null;
+
+      h2 = document.createElement("h2");
+      h2.innerText = "UI";
+      container.appendChild(h2);
+
+      for(var i = 0; i < uis.length; ++i)
+      {
+        if(i % 8 == 0)
+        {
+          row = document.createElement("div");
+          row.classList.add("row");
+          container.appendChild(row);
+        }
+
+        row.appendChild(createElement("ui", uis[i]));
+      }
+
+      function createElement(base, _class)
+      {
+        var wrapper = document.createElement("div");
+        wrapper.classList.add("wrapper");
+
+        var element = document.createElement("div");
+        element.classList.add(base);
+
+        var label = document.createElement("div");
+        label.classList.add("label");
+
+        if(typeof _class != "string")
+        {
+          if(typeof _class.attribute != "undefined")
+          {
+            var attr = document.createAttribute(_class.attribute);
+            wrapper.attributes.setNamedItem(attr);
+          }
+
+          var labeltext = "";
+
+          if(typeof _class._class != "string")
+          {
+            var dot = "";
+
+            for(var i = 0; i < _class._class.length; ++i)
+            {
+              if(_class._class[i] != "")
+              {
+                element.classList.add(_class._class[i]);
+                labeltext += dot + _class._class[i];
+                dot = ".";
+              }
+            }
+          }
+          else
+          {
+            element.classList.add(_class._class);
+            labeltext = _class._class;
+          }
+
+          label.innerHTML = (_class.attribute ? "[" + _class.attribute + "]<br/>" : "") + "." + base + "." + labeltext;
+        }
+        else
+        {
+          element.classList.add(_class);
+          label.innerText = "." + base + "." + _class;
+        }
+
+        wrapper.appendChild(element);
+        wrapper.appendChild(label);
+
+        return wrapper;
+      }
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,569 @@
+/* ICONS */
+.icon
+{
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+}
+
+.icon.award
+{
+  background-image: url(images/award.png);
+}
+
+.icon.lock
+{
+  background-image: url(images/lock.png);
+}
+
+.icon.unlock
+{
+  background-image: url(images/unlock.png);
+}
+
+.icon.path
+{
+  background-image: url(images/path.png);
+}
+
+*[disabled] .icon.path
+{
+  background-image: url(images/path-disabled.png);
+}
+
+.icon.wof
+{
+  background-image: url(images/wof.png);
+}
+
+*[disabled] .icon.wof
+{
+  background-image: url(images/wof-disabled.png);
+}
+
+.icon.activities
+{
+  background-image: url(images/activities.png);
+}
+
+*[disabled] .icon.activities
+{
+  background-image: url(images/activities-disabled.png);
+}
+
+.icon.announcements
+{
+  background-image: url(images/announcements.png);
+}
+
+*[disabled] .icon.announcements
+{
+  background-image: url(images/announcements-disabled.png);
+}
+
+.icon.logout
+{
+  background-image: url(images/logout.png);
+}
+
+.icon.portfolio
+{
+  background-image: url(images/portfolio.png);
+}
+
+.icon.calendar
+{
+  background-image: url(images/calendar.png);
+}
+
+.icon.messenger.female
+{
+  background-image: url(images/messenger-female.png);
+}
+
+.icon.messenger.male
+{
+  background-image: url(images/messenger-male.png);
+}
+
+/* UI */
+.ui.radial-inner-shadow
+{
+  background-image: url(images/radial-inner-shadow.png);
+  background-size: 100%;
+}
+
+/* SKILL ICONS */
+.icon.animation,
+.icon.game-development,
+.icon.filmmaking,
+.icon.web-development,
+.icon.graphic-design,
+.icon.\33 d-modeling,
+.icon.programming,
+.icon.music,
+.icon.drawing,
+.icon.writing,
+.icon.communication,
+.icon.new-media,
+.icon.photography,
+.icon.robotics,
+.icon.motion-graphics,
+.icon.learning-lab
+{
+  background-image: url(images/skill-icons.png);
+  width: 196px;
+  height: 196px;
+  background-size: initial;
+}
+
+.icon.photography
+{
+  background-position-x: 0px;
+  background-position-y: 0px;
+}
+.icon.photography.border
+{
+  background-position-x: 0px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.photography
+{
+  background-position-x: 0px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.photography.border
+{
+  background-position-x: 0px;
+  background-position-y: -588px;
+}
+.icon.photography.color
+{
+  background-position-x: 0px;
+  background-position-y: -784px;
+}
+.icon.photography.color.border
+{
+  background-position-x: 0px;
+  background-position-y: -980px;
+}
+.icon.robotics
+{
+  background-position-x: -196px;
+  background-position-y: 0px;
+}
+.icon.robotics.border
+{
+  background-position-x: -196px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.robotics
+{
+  background-position-x: -196px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.robotics.border
+{
+  background-position-x: -196px;
+  background-position-y: -588px;
+}
+.icon.robotics.color
+{
+  background-position-x: -196px;
+  background-position-y: -784px;
+}
+.icon.robotics.color.border
+{
+  background-position-x: -196px;
+  background-position-y: -980px;
+}
+.icon.web-development
+{
+  background-position-x: -392px;
+  background-position-y: 0px;
+}
+.icon.web-development.border
+{
+  background-position-x: -392px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.web-development
+{
+  background-position-x: -392px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.web-development.border
+{
+  background-position-x: -392px;
+  background-position-y: -588px;
+}
+.icon.web-development.color
+{
+  background-position-x: -392px;
+  background-position-y: -784px;
+}
+.icon.web-development.color.border
+{
+  background-position-x: -392px;
+  background-position-y: -980px;
+}
+.icon.graphic-design
+{
+  background-position-x: -588px;
+  background-position-y: 0px;
+}
+.icon.graphic-design.border
+{
+  background-position-x: -588px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.graphic-design
+{
+  background-position-x: -588px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.graphic-design.border
+{
+  background-position-x: -588px;
+  background-position-y: -588px;
+}
+.icon.graphic-design.color
+{
+  background-position-x: -588px;
+  background-position-y: -784px;
+}
+.icon.graphic-design.color.border
+{
+  background-position-x: -588px;
+  background-position-y: -980px;
+}
+.icon.programming
+{
+  background-position-x: -784px;
+  background-position-y: 0px;
+}
+.icon.programming.border
+{
+  background-position-x: -784px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.programming
+{
+  background-position-x: -784px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.programming.border
+{
+  background-position-x: -784px;
+  background-position-y: -588px;
+}
+.icon.programming.color
+{
+  background-position-x: -784px;
+  background-position-y: -784px;
+}
+.icon.programming.color.border
+{
+  background-position-x: -784px;
+  background-position-y: -980px;
+}
+.icon.game-development
+{
+  background-position-x: -980px;
+  background-position-y: 0px;
+}
+.icon.game-development.border
+{
+  background-position-x: -980px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.game-development
+{
+  background-position-x: -980px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.game-development.border
+{
+  background-position-x: -980px;
+  background-position-y: -588px;
+}
+.icon.game-development.color
+{
+  background-position-x: -980px;
+  background-position-y: -784px;
+}
+.icon.game-development.color.border
+{
+  background-position-x: -980px;
+  background-position-y: -980px;
+}
+.icon.\33 d-modeling
+{
+  background-position-x: -1176px;
+  background-position-y: 0px;
+}
+.icon.\33 d-modeling.border
+{
+  background-position-x: -1176px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.\33 d-modeling
+{
+  background-position-x: -1176px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.\33 d-modeling.border
+{
+  background-position-x: -1176px;
+  background-position-y: -588px;
+}
+.icon.\33 d-modeling.color
+{
+  background-position-x: -1176px;
+  background-position-y: -784px;
+}
+.icon.\33 d-modeling.color.border
+{
+  background-position-x: -1176px;
+  background-position-y: -980px;
+}
+.icon.music
+{
+  background-position-x: -1372px;
+  background-position-y: 0px;
+}
+.icon.music.border
+{
+  background-position-x: -1372px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.music
+{
+  background-position-x: -1372px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.music.border
+{
+  background-position-x: -1372px;
+  background-position-y: -588px;
+}
+.icon.music.color
+{
+  background-position-x: -1372px;
+  background-position-y: -784px;
+}
+.icon.music.color.border
+{
+  background-position-x: -1372px;
+  background-position-y: -980px;
+}
+.icon.filmmaking
+{
+  background-position-x: -1568px;
+  background-position-y: 0px;
+}
+.icon.filmmaking.border
+{
+  background-position-x: -1568px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.filmmaking
+{
+  background-position-x: -1568px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.filmmaking.border
+{
+  background-position-x: -1568px;
+  background-position-y: -588px;
+}
+.icon.filmmaking.color
+{
+  background-position-x: -1568px;
+  background-position-y: -784px;
+}
+.icon.filmmaking.color.border
+{
+  background-position-x: -1568px;
+  background-position-y: -980px;
+}
+.icon.writing
+{
+  background-position-x: -1764px;
+  background-position-y: 0px;
+}
+.icon.writing.border
+{
+  background-position-x: -1764px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.writing
+{
+  background-position-x: -1764px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.writing.border
+{
+  background-position-x: -1764px;
+  background-position-y: -588px;
+}
+.icon.writing.color
+{
+  background-position-x: -1764px;
+  background-position-y: -784px;
+}
+.icon.writing.color.border
+{
+  background-position-x: -1764px;
+  background-position-y: -980px;
+}
+.icon.drawing
+{
+  background-position-x: -1960px;
+  background-position-y: 0px;
+}
+.icon.drawing.border
+{
+  background-position-x: -1960px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.drawing
+{
+  background-position-x: -1960px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.drawing.border
+{
+  background-position-x: -1960px;
+  background-position-y: -588px;
+}
+.icon.drawing.color
+{
+  background-position-x: -1960px;
+  background-position-y: -784px;
+}
+.icon.drawing.color.border
+{
+  background-position-x: -1960px;
+  background-position-y: -980px;
+}
+.icon.animation
+{
+  background-position-x: -2156px;
+  background-position-y: 0px;
+}
+.icon.animation.border
+{
+  background-position-x: -2156px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.animation
+{
+  background-position-x: -2156px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.animation.border
+{
+  background-position-x: -2156px;
+  background-position-y: -588px;
+}
+.icon.animation.color
+{
+  background-position-x: -2156px;
+  background-position-y: -784px;
+}
+.icon.animation.color.border
+{
+  background-position-x: -2156px;
+  background-position-y: -980px;
+}
+.icon.new-media
+{
+  background-position-x: -2352px;
+  background-position-y: 0px;
+}
+.icon.new-media.border
+{
+  background-position-x: -2352px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.new-media
+{
+  background-position-x: -2352px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.new-media.border
+{
+  background-position-x: -2352px;
+  background-position-y: -588px;
+}
+.icon.new-media.color
+{
+  background-position-x: -2352px;
+  background-position-y: -784px;
+}
+.icon.new-media.color.border
+{
+  background-position-x: -2352px;
+  background-position-y: -980px;
+}
+.icon.motion-graphics
+{
+  background-position-x: -2548px;
+  background-position-y: 0px;
+}
+.icon.motion-graphics.border
+{
+  background-position-x: -2548px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.motion-graphics
+{
+  background-position-x: -2548px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.motion-graphics.border
+{
+  background-position-x: -2548px;
+  background-position-y: -588px;
+}
+.icon.motion-graphics.color
+{
+  background-position-x: -2548px;
+  background-position-y: -784px;
+}
+.icon.motion-graphics.color.border
+{
+  background-position-x: -2548px;
+  background-position-y: -980px;
+}
+.icon.learning-lab
+{
+  background-position-x: -2744px;
+  background-position-y: 0px;
+}
+.icon.learning-lab.border
+{
+  background-position-x: -2744px;
+  background-position-y: -196px;
+}
+*[disabled] .icon.learning-lab
+{
+  background-position-x: -2744px;
+  background-position-y: -392px;
+}
+*[disabled] .icon.learning-lab.border
+{
+  background-position-x: -2744px;
+  background-position-y: -588px;
+}
+.icon.learning-lab.color
+{
+  background-position-x: -2744px;
+  background-position-y: -784px;
+}
+.icon.learning-lab.color.border
+{
+  background-position-x: -2744px;
+  background-position-y: -980px;
+}
