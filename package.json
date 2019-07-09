@@ -10,6 +10,6 @@
     "images"
   ],
   "dependencies": {
-    "@polymer/font-roboto": "^0.0.3",
+    "@polymer/font-roboto": "^0.0.3"
   }
 }
